@@ -104,6 +104,7 @@ when 'freebsd'
   default['ntp']['varlibdir'] = '/var/db'
   default['ntp']['driftfile'] = "#{node['ntp']['varlibdir']}/ntpd.drift"
   default['ntp']['statsdir'] = "#{node['ntp']['varlibdir']}/ntpstats"
+  default['ntp']['leapfile'] = '#{node['ntp']['varlibdir']}/ntpd.leap-seconds.list'
   default['ntp']['conf_group'] = 'wheel'
   default['ntp']['var_owner'] = 'root'
   default['ntp']['var_group'] = 'wheel'
